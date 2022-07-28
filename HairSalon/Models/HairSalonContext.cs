@@ -1,6 +1,6 @@
 
 
-namespace MVC_Database_Template.Models
+namespace HairSalon.Models
 {
     public class Template
     {

@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace MVC_Database_Template
+namespace HairSalon
 {
     public class Program
     {
