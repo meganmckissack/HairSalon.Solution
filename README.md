@@ -14,6 +14,9 @@
 
 ## Setup/Installation Requirements
 
+Database schema
+![database schema](/schema-img.png)
+
 ## Known Bugs
 
 _none_
