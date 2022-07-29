@@ -1,11 +1,17 @@
+using Microsoft.EntityFrameworkCore;
 
 
 namespace HairSalon.Models
 {
-    public class Template
+    public class HairSalonContext : DbContext
     {
-        public int TemplateId { get; set; }
+        public DbSet<Client> Clients { get; set; }
 
-        
+        public HairSalonContext(DbContextOptions options) : base(options) { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLazyLoadingProxies();
+        }
     }
 }
