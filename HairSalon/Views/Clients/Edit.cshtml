@@ -18,6 +18,9 @@
   @Html.LabelFor(model => model.Contact)
   @Html.EditorFor(model => model.Contact)
 
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")
+
   <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to list", "Index")</p>
