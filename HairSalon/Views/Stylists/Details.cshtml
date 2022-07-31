@@ -2,12 +2,19 @@
   Layout = "_Layout";
 }
 
+@using HairSalon.Models
 @model HairSalon.Models.Stylist
 
 <h2>Stylist Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
     <h3>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)<h3></h3>
+
+      @foreach (Client client in Model.Clients)
+      {
+        <li>@client.Name</li>
+
+      }
 
       <p class="btn btn-color" href="#" role="button">@Html.ActionLink("Edit Stylist", "Edit", new { id =
         Model.StylistId })</p>
